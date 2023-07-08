@@ -2,15 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Color Pallete */
-
 :root {
+  /* Color Pallete */
   --main-bg-color: #02315e;
   --secondary-bg-color: #00457e;
   --light-bg-color: #2f70af;
   --select-bg-color: #e2e8f0;
   --alert-bg-color: #b9848c;
   --contrast-bg-color: #806491;
+  /* Fonts */
+  --main-font: "Open Sans", sans-serif;
+  --heading-font: "Ysabeau SC", sans-serif;
+  --handwriting-font: "Handlee", cursive;
 }
 
 .bg-main-color {
@@ -38,8 +41,18 @@
 }
 
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--main-font);
 }
+
+.heading-font {
+  font-family: var(--heading-font);
+}
+
+.handwriting-font {
+  font-family: var(--handwriting-font);
+}
+
+/* Header */
 
 .bars {
   display: none;
@@ -103,5 +116,22 @@ html {
 
   .nav-bar ul li a {
     margin-bottom: 20px;
+  }
+}
+
+/* Section Home */
+
+@media (max-width: 768px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name {
+    font-size: 5rem;
+  }
+
+  .cheems {
+    display: none;
   }
 }
