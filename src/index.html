@@ -18,9 +18,11 @@
 </head>
 
 <body>
-  <header class="w-full h-24 flex items-center justify-between bg-main-color">
+  <header id="header" class="fixed top-0 w-full h-24 flex items-center justify-between bg-main-color">
     <div class="logo text-gray-100 text-2xl font-bold ml-5">
-      Lecav's Portfolio
+      <a href="#header">
+        Lecav's Portfolio
+      </a>
     </div>
     <button class="bars">
       <svg xmlns="http://www.w3.org/2000/svg" height="2em"
@@ -37,7 +39,7 @@
     <!-- Navbar -->
     <nav class="nav-bar bg-main-color text-gray-100">
       <ul class="list-none no-underline flex">
-        <li><a class="active" href="#">Home</a></li>
+        <li><a class="active" href="#home">Home</a></li>
         <li><a href="#">Skills</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
@@ -45,7 +47,7 @@
   </header>
 
   <!-- Section Home -->
-  <section id="home" class="m-2">
+  <section id="home" class="p-2 mt-24 bg-section-light">
     <div class="profile flex justify-evenly items-center">
       <img class="rounded-full w-80" src="img\profile.png" alt="Sebastian's Image">
       <h1 class="name text-8xl heading-font text-center font-bold align-middle">Sebastián </br> Lévano</h1>

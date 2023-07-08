@@ -4,9 +4,9 @@
 
 :root {
   /* Color Pallete */
-  --main-bg-color: #02315e;
+  --main-bg-color: #02315e; /* rgb(2, 49, 94) */
   --secondary-bg-color: #00457e;
-  --light-bg-color: #2f70af;
+  --light-bg-color: #2f70af; /* rgb(47, 112, 175) */
   --select-bg-color: #e2e8f0;
   --alert-bg-color: #b9848c;
   --contrast-bg-color: #806491;
@@ -26,6 +26,14 @@
 
 .bg-light-color {
   background-color: var(--light-bg-color);
+}
+
+.bg-section-light {
+  background-color: rgba(47, 112, 175, 0.3);
+}
+
+.bg-section-dark {
+  background-color: rgba(2, 49, 94, 0.6);
 }
 
 .bg-select-color {
@@ -126,7 +134,7 @@ html {
     display: flex;
     flex-direction: column;
   }
-  
+
   .name {
     font-size: 5rem;
   }
