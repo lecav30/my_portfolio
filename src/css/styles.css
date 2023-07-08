@@ -1,3 +1,107 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Color Pallete */
+
+:root {
+  --main-bg-color: #02315e;
+  --secondary-bg-color: #00457e;
+  --light-bg-color: #2f70af;
+  --select-bg-color: #e2e8f0;
+  --alert-bg-color: #b9848c;
+  --contrast-bg-color: #806491;
+}
+
+.bg-main-color {
+  background-color: var(--main-bg-color);
+}
+
+.bg-secondary-color {
+  background-color: var(--secondary-bg-color);
+}
+
+.bg-light-color {
+  background-color: var(--light-bg-color);
+}
+
+.bg-select-color {
+  background-color: var(--select-bg-color);
+}
+
+.bg-alert-color {
+  background-color: var(--alert-bg-color);
+}
+
+.bg-constrast-color {
+  background-color: var(--contrast-bg-color);
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+.bars {
+  display: none;
+}
+
+.nav-bar ul li a {
+  display: block;
+  margin: 0 0.3rem;
+  padding: 1.25rem 1.3rem;
+  font-size: 1.25rem;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.nav-bar ul li a:hover {
+  background-color: var(--select-bg-color);
+  color: var(--main-bg-color);
+}
+
+.nav-bar ul li a.active {
+  background-color: var(--select-bg-color);
+  color: var(--main-bg-color);
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 30px;
+  }
+
+  .bars {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+
+  .nav-bar.active {
+    height: 100vh;
+  }
+
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin: 60px auto 0 auto;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+
+  .nav-bar ul li a {
+    margin-bottom: 20px;
+  }
+}
