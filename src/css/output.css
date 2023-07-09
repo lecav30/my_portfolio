@@ -534,24 +534,36 @@ video {
   margin: 1.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .ml-5 {
   margin-left: 1.25rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .flex {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-24 {
   height: 6rem;
 }
 
-.w-20 {
-  width: 5rem;
+.w-1\/4 {
+  width: 25%;
 }
 
 .w-60 {
@@ -590,6 +602,10 @@ video {
   justify-content: space-evenly;
 }
 
+.self-center {
+  align-self: center;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -602,12 +618,16 @@ video {
   padding: 0.75rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
 
-.align-middle {
-  vertical-align: middle;
+.text-justify {
+  text-align: justify;
 }
 
 .text-2xl {
@@ -649,14 +669,14 @@ video {
 
 :root {
   /* Color Pallete */
-  --main-bg-color: #02315e;
+  --main-color: #02315e;
   /* rgb(2, 49, 94) */
-  --secondary-bg-color: #00457e;
-  --light-bg-color: #2f70af;
+  --secondary-color: #00457e;
+  --light-color: #2f70af;
   /* rgb(47, 112, 175) */
-  --select-bg-color: #e2e8f0;
-  --alert-bg-color: #b9848c;
-  --contrast-bg-color: #806491;
+  --select-color: #e2e8f0;
+  --alert-color: #b9848c;
+  --contrast-color: #806491;
   /* Fonts */
   --main-font: "Open Sans", sans-serif;
   --heading-font: "Ysabeau SC", sans-serif;
@@ -664,15 +684,15 @@ video {
 }
 
 .bg-main-color {
-  background-color: var(--main-bg-color);
+  background-color: var(--main-color);
 }
 
 .bg-secondary-color {
-  background-color: var(--secondary-bg-color);
+  background-color: var(--secondary-color);
 }
 
 .bg-light-color {
-  background-color: var(--light-bg-color);
+  background-color: var(--light-color);
 }
 
 .bg-section-light {
@@ -685,15 +705,15 @@ video {
 }
 
 .bg-select-color {
-  background-color: var(--select-bg-color);
+  background-color: var(--select-color);
 }
 
 .bg-alert-color {
-  background-color: var(--alert-bg-color);
+  background-color: var(--alert-color);
 }
 
 .bg-constrast-color {
-  background-color: var(--contrast-bg-color);
+  background-color: var(--contrast-color);
 }
 
 html {
@@ -724,13 +744,13 @@ html {
 }
 
 .nav-bar ul li a:hover {
-  background-color: var(--select-bg-color);
-  color: var(--main-bg-color);
+  background-color: var(--select-color);
+  color: var(--main-color);
 }
 
 .nav-bar ul li a.active {
-  background-color: var(--select-bg-color);
-  color: var(--main-bg-color);
+  background-color: var(--select-color);
+  color: var(--main-color);
 }
 
 @media (max-width: 768px) {
@@ -811,5 +831,96 @@ html {
     margin: 2rem 0.5rem 0 0.5rem;
     width: 12rem;
     height: 3.5rem;
+  }
+}
+
+/* Section Services */
+
+.card {
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  background: #f1f1f3;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+}
+
+.show {
+  animation: show 0.5s ease;
+}
+
+.remove-hover {
+  pointer-events: none;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.knowledge {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.knowledge .technology {
+  width: 30%;
+}
+
+.knowledge .progress {
+  width: 70%;
+}
+
+.progress {
+  height: 35px;
+  width: 100%;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  background-color: rgba(47, 112, 175, 0.2);
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  transition: width 0.25s;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .knowledge {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .knowledge .technology {
+    width: 100%;
+  }
+
+  .knowledge .progress {
+    width: 100%;
   }
 }

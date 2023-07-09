@@ -41,26 +41,26 @@
       <ul class="list-none no-underline flex">
         <li><a class="active" href="#home">Home</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
   </header>
 
   <!-- Section Home -->
-  <section id="home" class="p-2 mt-12 bg-section-light">
+  <section id="home" class="p-2 mt-24 bg-section-light">
     <div class="profile flex justify-evenly items-center">
       <img class="rounded-full w-80" src="img\profile.png" alt="Sebastian's Image">
-      <h1 class="name text-8xl heading-font text-center font-bold align-middle">Sebastián </br> Lévano</h1>
+      <h1 class="name text-8xl heading-font text-center font-bold">Sebastián </br> Lévano</h1>
     </div>
     <div class="m-6 flex justify-evenly items-center">
-      <h3 class="text-4xl heading-font text-center font-semibold align-middle">Estudiante de Ingeniería de Software</h3>
+      <h3 class="text-4xl heading-font text-center font-semibold">Estudiante de Ingeniería de Software</h3>
       <img class="cheems rounded-full w-60" src="img\cheems_programmer.jpg" alt="Cheems programmer">
     </div>
   </section>
 
   <!-- Section Skills -->
   <section id="skills" class="p-2 bg-section-dark">
-    <h1 class="text-6xl heading-font font-bold text-center align-middle">Tecnologías que he usado</h1>
+    <h1 class="text-6xl heading-font font-bold text-center">Tecnologías que he usado</h1>
     <div class="skills flex flex-row justify-evenly">
       <div class="flex flex-col items-center p-3">
         <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
@@ -116,23 +116,95 @@
   </section>
 
   <!-- Section Services -->
-  <sections id="services">
-    <h1></h1>
-    <div>
-      <div>
-        <h2></h2>
-        <div></div>
+  <section id="services" class="p-4 bg-section-light">
+    <h1 class="text-8xl heading-font text-center font-bold">Servicios que ofrezco</h1>
+    <div class="services flex flow-row justify-evenly mt-6">
+      <div class="card w-1/4" id="backend">
+        <h2 class="text-2xl heading-font font-semibold mb-2">Desarrollo Backend</h2>
+        <div class="show" id="backend-techonologies">
+          <div class="knowledge flex flex-row">
+            <p class="technology self-center">Flask</p>
+            <div class="progress">
+              <div class="progress-bar" style="width:40%;"></div>
+            </div>
+          </div>
+          <div class="knowledge flex flex-row">
+            <p class="technology self-center">.NET</p>
+            <div class="progress">
+              <div class="progress-bar" style="width:60%;"></div>
+            </div>
+          </div>
+          <div class="knowledge flex flex-row">
+            <p class="technology self-center">SpringBoot</p>
+            <div class="progress">
+              <div class="progress-bar" style="width:50%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden show" id="backend-description">
+          <p class="text-justify">
+            Mi experiencia con los frameworks de backend, mostrados en el <i>card</i>,
+            se basa en los proyectos que he realizado en la universidad. Específicamente
+            desarrollando el backend para pequeñas aplicaciones móviles y web. Sin embargo,
+            en el caso de Flask no utilice Base de Datos, ya que implemente el API con
+            contenido estático.
+          </p>
+        </div>
       </div>
-      <div>
-        <h2></h2>
-        <div></div>
+      <div class="card w-1/4 show" id="frontend">
+        <h2 class="text-2xl heading-font font-semibold mb-2">Desarrollo Frontend</h2>
+        <div class="show" id="frontend-techonologies">
+          <div class="knowledge flex flex-row">
+            <p class="technology self-center">Angular</p>
+            <div class="progress">
+              <div class="progress-bar" style="width:70%;"></div>
+            </div>
+          </div>
+          <div class="knowledge flex flex-row">
+            <p class="technology self-center">VueJS</p>
+            <div class="progress">
+              <div class="progress-bar" style="width:70%;"></div>
+            </div>
+          </div>
+          <div class="knowledge flex flex-row">
+            <p class="technology self-center">TailwindCSS</p>
+            <div class="progress">
+              <div class="progress-bar" style="width:60%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden show" id="frontend-description">
+          <p class="text-justify">
+            Mi experiencia con los frameworks de backend, mostrados en el <i>card</i>,
+            se basa en los proyectos que he realizado en la universidad. Específicamente
+            desarrollando el backend para pequeñas aplicaciones móviles y web. Sin embargo,
+            en el caso de Flask no utilice Base de Datos, ya que implemente el API con
+            contenido estático.
+          </p>
+        </div>
       </div>
-      <div>
-        <h2></h2>
-        <div></div>
+      <div class="card w-1/4 show" id="mobile">
+        <h2 class="text-2xl heading-font font-semibold mb-2">Desarrollo Móvil</h2>
+        <div class="show" id="mobile-techonologies">
+          <div class="knowledge flex flex-row">
+            <p class="technology self-center">Flutter / Dart</p>
+            <div class="progress">
+              <div class="progress-bar" style="width:40%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden show" id="mobile-description">
+          <p class="text-justify">
+            Mi experiencia con los frameworks de backend, mostrados en el <i>card</i>,
+            se basa en los proyectos que he realizado en la universidad. Específicamente
+            desarrollando el backend para pequeñas aplicaciones móviles y web. Sin embargo,
+            en el caso de Flask no utilice Base de Datos, ya que implemente el API con
+            contenido estático.
+          </p>
+        </div>
       </div>
     </div>
-  </sections>
+  </section>
 
   <!-- Section Contact -->
   <section id="contact">
