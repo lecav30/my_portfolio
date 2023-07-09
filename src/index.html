@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <header id="header" class="fixed top-0 w-full h-24 flex items-center justify-between bg-main-color">
+  <header class="fixed top-0 w-full h-24 flex items-center justify-between bg-main-color" id="header">
     <div class="logo text-gray-100 text-2xl font-bold ml-5">
       <a href="#home">
         Lecav's Portfolio
@@ -47,7 +47,7 @@
   </header>
 
   <!-- Section Home -->
-  <section id="home" class="p-2 mt-24 bg-section-light">
+  <section class="p-2 mt-24 bg-section-light" id="home">
     <div class="profile flex justify-evenly items-center">
       <img class="rounded-full w-80" src="img\profile.png" alt="Sebastian's Image">
       <h1 class="name text-8xl heading-font text-center font-bold">Sebastián </br> Lévano</h1>
@@ -59,7 +59,7 @@
   </section>
 
   <!-- Section Skills -->
-  <section id="skills" class="p-2 bg-section-dark">
+  <section id="skills" class="p-4 bg-section-dark">
     <h1 class="text-6xl heading-font font-bold text-center">Tecnologías que he usado</h1>
     <div class="skills flex flex-row justify-evenly">
       <div class="flex flex-col items-center p-3">
@@ -116,10 +116,10 @@
   </section>
 
   <!-- Section Services -->
-  <section id="services" class="p-4 bg-section-light">
-    <h1 class="text-8xl heading-font text-center font-bold">Servicios que ofrezco</h1>
-    <div class="services flex flow-row justify-evenly mt-6">
-      <div class="card w-1/4" id="backend">
+  <section class="p-4 bg-section-light" id="services">
+    <h1 class="text-8xl heading-font text-center font-bold mb-6">Servicios que ofrezco</h1>
+    <div class="services flex flow-row justify-evenly">
+      <div class="card card-service w-1/4" id="backend">
         <h2 class="text-2xl heading-font font-semibold mb-2">Desarrollo Backend</h2>
         <div class="show" id="backend-techonologies">
           <div class="knowledge flex flex-row">
@@ -151,7 +151,7 @@
           </p>
         </div>
       </div>
-      <div class="card w-1/4 show" id="frontend">
+      <div class="card card-service w-1/4 show" id="frontend">
         <h2 class="text-2xl heading-font font-semibold mb-2">Desarrollo Frontend</h2>
         <div class="show" id="frontend-techonologies">
           <div class="knowledge flex flex-row">
@@ -175,15 +175,14 @@
         </div>
         <div class="hidden show" id="frontend-description">
           <p class="text-justify">
-            Mi experiencia con los frameworks de backend, mostrados en el <i>card</i>,
-            se basa en los proyectos que he realizado en la universidad. Específicamente
-            desarrollando el backend para pequeñas aplicaciones móviles y web. Sin embargo,
-            en el caso de Flask no utilice Base de Datos, ya que implemente el API con
-            contenido estático.
+            Mi experiencia con los frameworks de frontend, mostrados en el <i>card</i>,
+            se basa en los proyectos que he realizado en la universidad y en la realización
+            de algunos proyectos individuales. Además, he prácticado con estos frameworks
+            por cuenta propia y visto algunos cursos como es el caso de VueJS.
           </p>
         </div>
       </div>
-      <div class="card w-1/4 show" id="mobile">
+      <div class="card card-service w-1/4 show" id="mobile">
         <h2 class="text-2xl heading-font font-semibold mb-2">Desarrollo Móvil</h2>
         <div class="show" id="mobile-techonologies">
           <div class="knowledge flex flex-row">
@@ -195,11 +194,11 @@
         </div>
         <div class="hidden show" id="mobile-description">
           <p class="text-justify">
-            Mi experiencia con los frameworks de backend, mostrados en el <i>card</i>,
-            se basa en los proyectos que he realizado en la universidad. Específicamente
-            desarrollando el backend para pequeñas aplicaciones móviles y web. Sin embargo,
-            en el caso de Flask no utilice Base de Datos, ya que implemente el API con
-            contenido estático.
+            El desarrollo móvil es de mis conocimientos más recientes, ya que lo he aprendido
+            en el ciclo pasado. A pesar de haber realizado mi Trabajo Final en Kotlin con
+            Android Studio, considero que el desarrollo con Flutter y Dart es más adecuado.
+            Ya que, Flutter ofrece una mejor experiencia de aprendizaje y presenta menos errores
+            con la implementación de widgets, esto último basado en mi experiencia.
           </p>
         </div>
       </div>
@@ -207,12 +206,21 @@
   </section>
 
   <!-- Section Contact -->
-  <section id="contact">
-    <h1></h1>
-    <div>
-      <input type="text">
-      <input type="text">
-      <input type="text">
+  <section class="bg-section-dark flex flex-col p-4" id="contact">
+    <h1 class="text-8xl heading-font text-center font-bold mb-6">Contáctame</h1>
+    <div class="card w-3/4 self-center text-black">
+      <form action="" class="flex flex-col">
+        <div class="contact flex flex-row m-2 justify-evenly">
+          <label class="w-1/12 self-center" for="POST-name">Nombre</label>
+          <input class="w-9/12" id="POST-name" type="text" name="name">
+        </div>
+        <div class="contact flex flex-row m-2 justify-evenly">
+          <label class="w-1/12 self-center" for="POST-email">Correo</label>
+          <input class="w-9/12" id="POST-email" type="email" name="email">
+        </div>
+        <textarea class="w-11/12 m-2 self-center" rows="4" cols="50" name="message">Escribe tu mensaje...</textarea>
+        <input class="send-mail w-20 self-center rounded-md bg-light-color text-xl text-gray-200" type="submit">
+      </form>
     </div>
   </section>
 

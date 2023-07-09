@@ -45,7 +45,7 @@
   background-color: var(--alert-color);
 }
 
-.bg-constrast-color {
+.bg-contrast-color {
   background-color: var(--contrast-color);
 }
 
@@ -170,10 +170,13 @@ html {
 
 .card {
   padding: 1rem;
-  cursor: pointer;
   border-radius: 0.75rem;
   background: #f1f1f3;
   box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+}
+
+.card-service {
+  cursor: pointer;
 }
 
 .show {
@@ -184,7 +187,7 @@ html {
   pointer-events: none;
 }
 
-.card:hover {
+.card-service:hover {
   transform: scale(1.05);
   transition: 0.5s;
 }
@@ -254,5 +257,39 @@ html {
 
   .knowledge .progress {
     width: 100%;
+  }
+}
+
+/* Section Contact */
+
+.send-mail {
+  cursor: pointer;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 100%;
+  resize: none;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact label,
+  .contact input {
+    width: 90%;
   }
 }
