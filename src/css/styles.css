@@ -91,6 +91,10 @@ html {
     padding: 0 30px;
   }
 
+  .logo {
+    margin-left: 0.5rem;
+  }
+
   .bars {
     display: block;
     cursor: pointer;
@@ -136,6 +140,15 @@ html {
     flex-direction: column;
   }
 
+  .profile h1 {
+    font-size: 3rem;
+  }
+
+  .profile img {
+    width: 50%;
+    height: auto;
+  }
+
   .name {
     font-size: 5rem;
   }
@@ -154,15 +167,19 @@ html {
 }
 
 @media (max-width: 768px) {
-  .skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  #skills h1 {
+    font-size: 3rem;
   }
 
   #skills div div img {
     margin: 2rem 0.5rem 0 0.5rem;
     width: 12rem;
     height: 3.5rem;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -235,6 +252,10 @@ html {
 }
 
 @media (max-width: 768px) {
+  #services h1 {
+    font-size: 3rem;
+  }
+
   .services {
     display: flex;
     flex-direction: column;
@@ -282,6 +303,10 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  #contact h1 {
+    font-size: 3em;
+  }
+
   .contact {
     display: flex;
     flex-direction: column;
