@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node --watch server.js",
     "start": "node server.js",
-    "deploy": "gh-pages -d src",
+    "deploy": "gh-pages -d src"
   },
   "repository": {
     "type": "git",
