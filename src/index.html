@@ -42,7 +42,7 @@
         <li><a class="active" href="#home">Home</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
   </header>
 
@@ -209,7 +209,7 @@
   <section class="bg-section-dark flex flex-col p-4" id="contact">
     <h1 class="text-8xl heading-font text-center font-bold mb-6">Contáctame</h1>
     <div class="card w-3/4 self-center text-black">
-      <form action="" class="flex flex-col">
+      <form class="contact-form" class="flex flex-col" method="POST">
         <div class="contact flex flex-row m-2 justify-evenly">
           <label class="w-1/12 self-center" for="POST-name">Nombre</label>
           <input class="w-9/12" id="POST-name" type="text" name="name">
@@ -218,7 +218,11 @@
           <label class="w-1/12 self-center" for="POST-email">Correo</label>
           <input class="w-9/12" id="POST-email" type="email" name="email">
         </div>
-        <textarea class="w-11/12 m-2 self-center" rows="4" cols="50" name="message">Escribe tu mensaje...</textarea>
+        <div class="contact flex flex-row m-2 justify-evenly">
+          <label class="w-1/12 self-center" for="POST-subject">Asunto</label>
+          <input class="w-9/12" id="POST-subject" type="text" name="subject">
+        </div>
+        <textarea class="w-11/12 m-2 self-center" id="POST-message" rows="4" cols="50" name="message"></textarea>
         <input class="send-mail w-20 self-center rounded-md bg-light-color text-xl text-gray-200" type="submit">
       </form>
     </div>
