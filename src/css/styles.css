@@ -134,6 +134,10 @@ html {
 
 /* Section Home */
 
+.cheems {
+  transform: scaleX(-1);
+}
+
 @media (max-width: 768px) {
   .profile {
     display: flex;
@@ -316,5 +320,13 @@ textarea {
   .contact label,
   .contact input {
     width: 90%;
+  }
+}
+
+/* Footer */
+
+@media (max-width: 768px) {
+  .links {
+    width: 55%; 
   }
 }
