@@ -101,11 +101,11 @@ html {
   }
 
   .nav-bar {
-    height: 0;
     position: absolute;
     top: 60px;
     left: 0;
     width: 100vw;
+    height: 0;
     transition: 0.5s;
     overflow: hidden;
   }
@@ -133,10 +133,6 @@ html {
 }
 
 /* Section Home */
-
-.cheems {
-  transform: scaleX(-1);
-}
 
 @media (max-width: 768px) {
   .profile {
