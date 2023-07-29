@@ -7,7 +7,7 @@ const select = (el, all = false) => {
   }
 };
 
-bars = select(".bars");
+let bars = select(".bars");
 bars.addEventListener("click", () => {
   navbar = select(".nav-bar");
   navbar.classList.toggle("active");
@@ -17,7 +17,7 @@ const onscroll = (el, listener) => {
   el.addEventListener("scroll", listener);
 };
 
-navbar_links = select(".scrollto", true);
+let navbar_links = select(".scrollto", true);
 
 const navbar_links_active = () => {
   let position = window.scrollY + 200;
@@ -35,6 +35,7 @@ const navbar_links_active = () => {
     }
   });
 };
+
 window.addEventListener("load", navbar_links_active);
 onscroll(document, navbar_links_active);
 

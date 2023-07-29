@@ -1,279 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Lecav's Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Icon-->
+    <link href="res\favicon\logo_max.ico" rel="icon" type="image/x-icon" />
+    <!--Css with TailwindCSS-->
+    <link href="css/output.css" rel="stylesheet" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <title>Lecav's Portfolio</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!--Icon-->
-  <link href="res\favicon\logo_max.ico" rel="icon" type="image/x-icon" />
-  <!--Css with TailwindCSS-->
-  <link href="css/output.css" rel="stylesheet" />
-  <!--Google Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Handlee&family=Open+Sans:wght@300;400;500;700&family=Ysabeau+SC:wght@300;400;700&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-  <header id="header" class="fixed top-0 left-0 right-0 w-full h-24 flex items-center justify-between bg-main-color"
-    style="z-index: 10;">
-    <div class="logo text-gray-100 text-2xl font-bold ml-5">
-      <a href="#home">
-        Lecav's Portfolio
-      </a>
-    </div>
-    <button class="bars">
-      <svg xmlns="http://www.w3.org/2000/svg" height="2em"
-        viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-        <style>
-          svg {
-            fill: #ffffff
-          }
-        </style>
-        <path
-          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-      </svg>
-    </button>
-    <!-- Navbar -->
-    <nav class="nav-bar bg-main-color text-gray-100">
-      <ul class="list-none no-underline flex">
-        <li><a class="scrollto active" href="#home">Home</a></li>
-        <li><a class="scrollto" href="#skills">Skills</a></li>
-        <li><a class="scrollto" href="#services">Services</a></li>
-        <li><a class="scrollto" href="#contact">Contact</a></li>
-      </ul>
-  </header>
-
-  <!-- Section Home -->
-  <section class="p-2 mt-24 bg-section-light" id="home">
-    <div class="profile flex justify-evenly items-center">
-      <img class="rounded-full w-80" src="img\profile.png" alt="Sebastian's Image">
-      <h1 class="name text-8xl heading-font text-center font-bold">Sebastián </br> Lévano</h1>
-    </div>
-    <div class="career m-6 flex justify-evenly items-center">
-      <h3 class="text-5xl heading-font text-center font-semibold">Estudiante de Ingeniería de Software</h3>
-      <img class="scale-x-[-1] rounded-full w-60" src="img\cheems_programmer.jpg" alt="Cheems programmer">
-    </div>
-  </section>
-
-  <!-- Section Skills -->
-  <section id="skills" class="p-4 bg-section-dark">
-    <h1 class="text-8xl heading-font font-bold text-center">Tecnologías que he usado</h1>
-    <div class="skills flex flex-row justify-evenly">
-      <div class="flex flex-col items-center p-3">
-        <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
-          alt="C++ Badget">
-        <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue"
-          alt="Python Badget">
-        <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"
-          alt="Flutter Badget">
-        <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white"
-          alt="Dart Badget">
-        <img src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white"
-          alt="Latex Badget">
+  <body>
+    <header
+      id="header"
+      class="fixed top-0 left-0 right-0 w-full h-24 flex items-center justify-between"
+      style="z-index: 10"
+    >
+      <div class="logo text-gray-100 text-2xl font-bold ml-5">
+        <a href="#home"> Lecav's Portfolio </a>
       </div>
-      <div class="flex flex-col items-center p-3">
-        <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"
-          alt=".Net Badget">
-        <img src="https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot"
-          alt="SpringBoot Badget">
-        <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"
-          alt="Flask Badget">
-        <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"
-          alt="Angular Badget">
-        <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D"
-          alt="VueJS Badget">
-      </div>
-      <div class="flex flex-col items-center p-3">
-        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-          alt="HTML Badget">
-        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
-          alt="CSS Badget">
-        <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
-          alt="JavaScript Badget">
-        <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-          alt="TypeScript Badget">
+      <button class="bars">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="2em"
+          viewBox="0 0 448 512"
+        >
+          <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <style>
+            svg {
+              fill: #ffffff;
+            }
+          </style>
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </button>
+      <!-- Navbar -->
+      <nav class="nav-bar text-gray-100">
+        <ul class="list-none no-underline flex">
+          <li><a class="scrollto active" href="#home">Home</a></li>
+          <li><a class="scrollto" href="#skills">Skills</a></li>
+          <li><a class="scrollto" href="#services">Services</a></li>
+          <li><a class="scrollto" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Section Home -->
+    <section class="p-2 mt-24 bg-section-primary" id="home">
+      <div class="profile flex justify-evenly items-center">
         <img
-          src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
-          alt="TypeScript Badget">
+          class="rounded-full w-80"
+          src="img\profile.png"
+          alt="Sebastian's Image"
+        />
+        <h1 class="name text-8xl heading-font text-center font-bold uppercase">
+          Sebastián <br />
+          Lévano
+        </h1>
       </div>
-      <div class="flex flex-col items-center p-3">
-        <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"
-          alt="MySQL Badget">
-        <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
-          alt="PostgreSQL Badget">
+      <div class="career m-6 flex justify-evenly items-center">
+        <h3 class="text-5xl heading-font text-center font-semibold">
+          Estudiante de Ingeniería de Software
+        </h3>
         <img
-          src="https://img.shields.io/badge/microsoft%20azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white"
-          alt="Microsoft Azure Badget">
-        <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
-          alt="Netlify Badget">
-        <img src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"
-          alt="Heroku Badget">
+          class="scale-x-[-1] rounded-full w-60"
+          src="img\cheems_programmer.jpg"
+          alt="Cheems programmer"
+        />
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Section Services -->
-  <section class="p-4 pb-8 bg-section-light" id="services">
-    <h1 class="text-8xl heading-font text-center font-bold mb-6">Servicios que ofrezco</h1>
-    <div class="services flex flow-row justify-evenly">
-      <div class="card card-service w-1/4" id="backend">
-        <h2 class="text-2xl heading-font font-semibold mb-2">Desarrollo Backend</h2>
-        <div class="show" id="backend-technologies">
-          <div class="knowledge flex flex-row">
-            <p class="technology self-center">Flask</p>
-            <div class="progress">
-              <div class="progress-bar" style="width:40%;"></div>
-            </div>
-          </div>
-          <div class="knowledge flex flex-row">
-            <p class="technology self-center">.NET</p>
-            <div class="progress">
-              <div class="progress-bar" style="width:60%;"></div>
-            </div>
-          </div>
-          <div class="knowledge flex flex-row">
-            <p class="technology self-center">SpringBoot</p>
-            <div class="progress">
-              <div class="progress-bar" style="width:50%;"></div>
-            </div>
-          </div>
+    <!-- Section Skills -->
+    <section id="skills" class="p-4 bg-section-secondary">
+      <h1 class="text-8xl heading-font font-bold text-center">
+        Tecnologías que he usado
+      </h1>
+      <div class="skills flex flex-row justify-evenly">
+        <div class="flex flex-col items-center p-3">
+          <img
+            src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
+            alt="C++ Badget"
+          />
+          <img
+            src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue"
+            alt="Python Badget"
+          />
+          <img
+            src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"
+            alt="Flutter Badget"
+          />
+          <img
+            src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white"
+            alt="Dart Badget"
+          />
+          <img
+            src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white"
+            alt="Latex Badget"
+          />
         </div>
-        <div class="hidden show" id="backend-description">
-          <p class="text-justify">
-            Mi experiencia con los frameworks de backend, mostrados en el <i>card</i>,
-            se basa en los proyectos que he realizado en la universidad. Específicamente
-            desarrollando el backend para pequeñas aplicaciones móviles y web. Sin embargo,
-            en el caso de Flask no utilice Base de Datos, ya que implemente el API con
-            contenido estático.
-          </p>
+        <div class="flex flex-col items-center p-3">
+          <img
+            src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"
+            alt=".Net Badget"
+          />
+          <img
+            src="https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot"
+            alt="SpringBoot Badget"
+          />
+          <img
+            src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"
+            alt="Flask Badget"
+          />
+          <img
+            src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"
+            alt="Angular Badget"
+          />
+          <img
+            src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D"
+            alt="VueJS Badget"
+          />
+        </div>
+        <div class="flex flex-col items-center p-3">
+          <img
+            src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+            alt="HTML Badget"
+          />
+          <img
+            src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+            alt="CSS Badget"
+          />
+          <img
+            src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+            alt="JavaScript Badget"
+          />
+          <img
+            src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+            alt="TypeScript Badget"
+          />
+          <img
+            src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+            alt="TypeScript Badget"
+          />
+        </div>
+        <div class="flex flex-col items-center p-3">
+          <img
+            src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"
+            alt="MySQL Badget"
+          />
+          <img
+            src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
+            alt="PostgreSQL Badget"
+          />
+          <img
+            src="https://img.shields.io/badge/microsoft%20azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white"
+            alt="Microsoft Azure Badget"
+          />
+          <img
+            src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
+            alt="Netlify Badget"
+          />
+          <img
+            src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"
+            alt="Heroku Badget"
+          />
         </div>
       </div>
-      <div class="card card-service w-1/4 show" id="frontend">
-        <h2 class="text-2xl heading-font font-semibold mb-2">Desarrollo Frontend</h2>
-        <div class="show" id="frontend-technologies">
-          <div class="knowledge flex flex-row">
-            <p class="technology self-center">Angular</p>
-            <div class="progress">
-              <div class="progress-bar" style="width:70%;"></div>
-            </div>
-          </div>
-          <div class="knowledge flex flex-row">
-            <p class="technology self-center">VueJS</p>
-            <div class="progress">
-              <div class="progress-bar" style="width:70%;"></div>
-            </div>
-          </div>
-          <div class="knowledge flex flex-row">
-            <p class="technology self-center">TailwindCSS</p>
-            <div class="progress">
-              <div class="progress-bar" style="width:60%;"></div>
-            </div>
-          </div>
-        </div>
-        <div class="hidden show" id="frontend-description">
-          <p class="text-justify">
-            Mi experiencia con los frameworks de frontend, mostrados en el <i>card</i>,
-            se basa en los proyectos que he realizado en la universidad y en la realización
-            de algunos proyectos individuales. Además, he prácticado con estos frameworks
-            por cuenta propia y visto algunos cursos como es el caso de VueJS.
-          </p>
-        </div>
-      </div>
-      <div class="card card-service w-1/4 show" id="mobile">
-        <h2 class="text-2xl heading-font font-semibold mb-2">Desarrollo Móvil</h2>
-        <div class="show" id="mobile-technologies">
-          <div class="knowledge flex flex-row">
-            <p class="technology self-center">Flutter / Dart</p>
-            <div class="progress">
-              <div class="progress-bar" style="width:40%;"></div>
-            </div>
-          </div>
-        </div>
-        <div class="hidden show" id="mobile-description">
-          <p class="text-justify">
-            El desarrollo móvil es de mis conocimientos más recientes, ya que lo he aprendido
-            en el ciclo pasado. A pesar de haber realizado mi Trabajo Final en Kotlin con
-            Android Studio, considero que el desarrollo con Flutter y Dart es más adecuado.
-            Ya que, Flutter ofrece una mejor experiencia de aprendizaje y presenta menos errores
-            con la implementación de widgets, esto último basado en mi experiencia.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Section Contact -->
-  <section class="bg-section-dark flex flex-col p-4 pb-8" id="contact">
-    <h1 class="text-8xl heading-font text-center font-bold mb-6">Contáctame</h1>
-    <div class="card w-3/4 self-center text-black">
-      <form class="contact-form flex flex-col" method="POST">
-        <div class="contact flex flex-row m-2 justify-evenly">
-          <label class="w-1/12 self-center" for="POST-name">Nombre</label>
-          <input class="w-9/12" id="POST-name" type="text" name="name">
+    <!-- Section Services -->
+    <section class="p-4 pb-8 bg-section-primary" id="services">
+      <h1 class="text-8xl heading-font text-center font-bold mb-6">
+        Servicios que ofrezco
+      </h1>
+      <div class="services flex flow-row justify-evenly">
+        <div class="card card-service w-1/4" id="backend">
+          <h2 class="text-2xl heading-font font-semibold mb-2">
+            Desarrollo Backend
+          </h2>
+          <div class="show" id="backend-technologies">
+            <div class="knowledge flex flex-row">
+              <p class="technology self-center">Flask</p>
+              <div class="progress">
+                <div class="progress-bar" style="width: 40%"></div>
+              </div>
+            </div>
+            <div class="knowledge flex flex-row">
+              <p class="technology self-center">.NET</p>
+              <div class="progress">
+                <div class="progress-bar" style="width: 60%"></div>
+              </div>
+            </div>
+            <div class="knowledge flex flex-row">
+              <p class="technology self-center">SpringBoot</p>
+              <div class="progress">
+                <div class="progress-bar" style="width: 50%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden show" id="backend-description">
+            <p class="text-justify">
+              Mi experiencia con los frameworks de backend, mostrados en el
+              <i>card</i>, se basa en los proyectos que he realizado en la
+              universidad. Específicamente desarrollando el backend para
+              pequeñas aplicaciones móviles y web. Sin embargo, en el caso de
+              Flask no utilice Base de Datos, ya que implemente el API con
+              contenido estático.
+            </p>
+          </div>
         </div>
-        <div class="contact flex flex-row m-2 justify-evenly">
-          <label class="w-1/12 self-center" for="POST-email">Correo</label>
-          <input class="w-9/12" id="POST-email" type="email" name="email">
+        <div class="card card-service w-1/4 show" id="frontend">
+          <h2 class="text-2xl heading-font font-semibold mb-2">
+            Desarrollo Frontend
+          </h2>
+          <div class="show" id="frontend-technologies">
+            <div class="knowledge flex flex-row">
+              <p class="technology self-center">Angular</p>
+              <div class="progress">
+                <div class="progress-bar" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="knowledge flex flex-row">
+              <p class="technology self-center">VueJS</p>
+              <div class="progress">
+                <div class="progress-bar" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="knowledge flex flex-row">
+              <p class="technology self-center">TailwindCSS</p>
+              <div class="progress">
+                <div class="progress-bar" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden show" id="frontend-description">
+            <p class="text-justify">
+              Mi experiencia con los frameworks de frontend, mostrados en el
+              <i>card</i>, se basa en los proyectos que he realizado en la
+              universidad y en la realización de algunos proyectos individuales.
+              Además, he prácticado con estos frameworks por cuenta propia y
+              visto algunos cursos como es el caso de VueJS.
+            </p>
+          </div>
         </div>
-        <div class="contact flex flex-row m-2 justify-evenly">
-          <label class="w-1/12 self-center" for="POST-subject">Asunto</label>
-          <input class="w-9/12" id="POST-subject" type="text" name="subject">
+        <div class="card card-service w-1/4 show" id="mobile">
+          <h2 class="text-2xl heading-font font-semibold mb-2">
+            Desarrollo Móvil
+          </h2>
+          <div class="show" id="mobile-technologies">
+            <div class="knowledge flex flex-row">
+              <p class="technology self-center">Flutter / Dart</p>
+              <div class="progress">
+                <div class="progress-bar" style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden show" id="mobile-description">
+            <p class="text-justify">
+              El desarrollo móvil es de mis conocimientos más recientes, ya que
+              lo he aprendido en el ciclo pasado. A pesar de haber realizado mi
+              Trabajo Final en Kotlin con Android Studio, considero que el
+              desarrollo con Flutter y Dart es más adecuado. Ya que, Flutter
+              ofrece una mejor experiencia de aprendizaje y presenta menos
+              errores con la implementación de widgets, esto último basado en mi
+              experiencia.
+            </p>
+          </div>
         </div>
-        <textarea class="w-11/12 m-2 self-center" id="POST-message" rows="4" cols="50" name="message"></textarea>
-        <input class="send-mail w-20 self-center rounded-md bg-light-color text-xl text-gray-200" type="submit">
-      </form>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <footer class="bg-section-light p-10 flex flex-col items-center justify-center">
-    <div class="links flex flex-row justify-evenly w-3/12">
-      <div>
-        <a href="https://github.com/lecav30" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" height="2em"
-            viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-            <path
-              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-          </svg>
-        </a>
+    <!-- Section Contact -->
+    <section class="bg-section-secondary flex flex-col p-4 pb-8" id="contact">
+      <h1 class="text-8xl heading-font text-center font-bold mb-6">
+        Contáctame
+      </h1>
+      <div class="card w-3/4 self-center text-black">
+        <form class="contact-form flex flex-col" method="POST">
+          <div class="contact flex flex-row m-2 justify-evenly">
+            <label class="w-1/12 self-center" for="POST-name">Nombre</label>
+            <input class="w-9/12" id="POST-name" type="text" name="name" />
+          </div>
+          <div class="contact flex flex-row m-2 justify-evenly">
+            <label class="w-1/12 self-center" for="POST-email">Correo</label>
+            <input class="w-9/12" id="POST-email" type="email" name="email" />
+          </div>
+          <div class="contact flex flex-row m-2 justify-evenly">
+            <label class="w-1/12 self-center" for="POST-subject">Asunto</label>
+            <input
+              class="w-9/12"
+              id="POST-subject"
+              type="text"
+              name="subject"
+            />
+          </div>
+          <textarea
+            class="w-11/12 m-2 self-center"
+            id="POST-message"
+            rows="4"
+            cols="50"
+            name="message"
+          ></textarea>
+          <input
+            class="send-mail w-20 self-center rounded-md text-xl text-gray-200"
+            type="submit"
+          />
+        </form>
       </div>
-      <div>
-        <a href="https://www.linkedin.com/in/sebastianlev" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" height="2em"
-            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-            <path
-              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-          </svg>
-        </a>
-      </div>
-      <div>
-        <a href="https://www.instagram.com/sebastian_lev9/" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" height="2em"
-            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-            <path
-              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-          </svg>
-        </a>
-      </div>
-      <div>
-        <a href="mailto: lecav30@outlook.com">
-          <svg xmlns="http://www.w3.org/2000/svg" height="2em"
-            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-            <path
-              d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
-          </svg>
-        </a>
-      </div>
-    </div>
-    <div class="mt-4">
-      <p class="text-center">© 2023 - Sebastián Lévano | All Rights Reserved</p>
-    </div>
-  </footer>
-</body>
+    </section>
 
-<script src="js/app.js"></script>
+    <footer
+      class="bg-section-secondary p-10 flex flex-col items-center justify-center"
+    >
+      <div class="links flex flex-row justify-evenly w-3/12">
+        <div>
+          <a href="https://github.com/lecav30" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="2em"
+              viewBox="0 0 496 512"
+            >
+              <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/sebastianlev" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="2em"
+              viewBox="0 0 448 512"
+            >
+              <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/sebastian_lev9/" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="2em"
+              viewBox="0 0 448 512"
+            >
+              <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div>
+          <a href="mailto: lecav30@outlook.com">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="2em"
+              viewBox="0 0 512 512"
+            >
+              <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="mt-4">
+        <p class="text-center">
+          © 2023 - Sebastián Lévano | All Rights Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
 
+  <script src="js/app.js"></script>
 </html>
