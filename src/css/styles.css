@@ -153,8 +153,12 @@ html {
     font-size: 5rem;
   }
 
-  .cheems {
+  .career img {
     display: none;
+  }
+
+  .career h3 {
+    font-size: 2rem;
   }
 }
 
@@ -323,6 +327,6 @@ textarea {
 
 @media (max-width: 768px) {
   .links {
-    width: 55%; 
+    width: 55%;
   }
 }

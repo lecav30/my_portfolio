@@ -696,9 +696,9 @@ video {
   line-height: 2rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-8xl {
@@ -892,8 +892,12 @@ html {
     font-size: 5rem;
   }
 
-  .cheems {
+  .career img {
     display: none;
+  }
+
+  .career h3 {
+    font-size: 2rem;
   }
 }
 
