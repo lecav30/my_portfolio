@@ -696,9 +696,9 @@ video {
   line-height: 2rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-8xl {
@@ -717,6 +717,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .text-black {
@@ -740,51 +744,22 @@ video {
 
 :root {
   /* Color Pallete */
-  --main-color: #02315e;
-  /* rgb(2, 49, 94) */
-  --secondary-color: #00457e;
-  --light-color: #2f70af;
-  /* rgb(47, 112, 175) */
-  --select-color: #e2e8f0;
-  --alert-color: #b9848c;
-  --contrast-color: #806491;
+  /* https://colorhunt.co/palette/ebf0f698ccd3364e68132238 */
+  --main-color: #ebf0f6;
+  --secondary-color: #98ccd3;
+  --accent-color: #364e68;
+  --warn-color: #132238;
   /* Fonts */
-  --main-font: "Open Sans", sans-serif;
-  --heading-font: "Ysabeau SC", sans-serif;
-  --handwriting-font: "Handlee", cursive;
+  --main-font: "Ubuntu", sans-serif;
+  --heading-font: "Roboto Condensed", sans-serif;
 }
 
-.bg-main-color {
+.bg-section-primary {
   background-color: var(--main-color);
 }
 
-.bg-secondary-color {
+.bg-section-secondary {
   background-color: var(--secondary-color);
-}
-
-.bg-light-color {
-  background-color: var(--light-color);
-}
-
-.bg-section-light {
-  background-color: rgba(47, 112, 175, 0.3);
-}
-
-.bg-section-dark {
-  background-color: rgba(2, 49, 94, 0.7);
-  color: rgb(243, 244, 246);
-}
-
-.bg-select-color {
-  background-color: var(--select-color);
-}
-
-.bg-alert-color {
-  background-color: var(--alert-color);
-}
-
-.bg-contrast-color {
-  background-color: var(--contrast-color);
 }
 
 html {
@@ -795,14 +770,15 @@ html {
   font-family: var(--heading-font);
 }
 
-.handwriting-font {
-  font-family: var(--handwriting-font);
-}
-
 /* Header */
 
 .bars {
   display: none;
+}
+
+#header,
+.nav-bar {
+  background-color: var(--accent-color);
 }
 
 .nav-bar ul li a {
@@ -815,13 +791,13 @@ html {
 }
 
 .nav-bar ul li a:hover {
-  background-color: var(--select-color);
-  color: var(--main-color);
+  background-color: var(--secondary-color);
+  color: black;
 }
 
 .nav-bar ul li a.active {
-  background-color: var(--select-color);
-  color: var(--main-color);
+  background-color: var(--secondary-color);
+  color: black;
 }
 
 @media (max-width: 768px) {
@@ -892,8 +868,12 @@ html {
     font-size: 5rem;
   }
 
-  .cheems {
+  .career img {
     display: none;
+  }
+
+  .career h3 {
+    font-size: 2rem;
   }
 }
 
@@ -903,6 +883,10 @@ html {
   margin: 2rem 1rem 0 1rem;
   width: 12rem;
   height: 4.5rem;
+}
+
+#skills div div img:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
@@ -927,8 +911,8 @@ html {
 .card {
   padding: 1rem;
   border-radius: 0.75rem;
-  background: #f1f1f3;
-  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+  background: var(--main-color);
+  box-shadow: 0px 2px 4px 0px var(--warn-color);
 }
 
 .card-service {
@@ -976,14 +960,14 @@ html {
 .progress {
   height: 35px;
   width: 100%;
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--warn-color);
   border-radius: 5px;
   background-color: rgba(47, 112, 175, 0.2);
 }
 
 .progress-bar {
   height: 100%;
-  background: var(--main-color);
+  background: var(--warn-color);
   display: flex;
   align-items: center;
   transition: width 0.25s;
@@ -1024,6 +1008,7 @@ html {
 
 .send-mail {
   cursor: pointer;
+  background-color: var(--warn-color);
 }
 
 input {
