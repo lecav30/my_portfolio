@@ -770,6 +770,18 @@ html {
   font-family: var(--heading-font);
 }
 
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Header */
 
 .bars {
@@ -877,16 +889,38 @@ html {
   }
 }
 
+#home div img {
+  animation: show 1s ease-in-out;
+}
+
 /* Section Skills */
+
+@keyframes display {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
 
 #skills div div img {
   margin: 2rem 1rem 0 1rem;
   width: 12rem;
   height: 4.5rem;
+  view-timeline-name: --revealing-image;
+  animation-name: display;
+  animation-fill-mode: none;
+  animation-timeline: --revealing-image;
+  animation-range: entry 25% cover 15%;
 }
 
 #skills div div img:hover {
   transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -930,18 +964,6 @@ html {
 .card-service:hover {
   transform: scale(1.05);
   transition: 0.5s;
-}
-
-@keyframes show {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .knowledge {
